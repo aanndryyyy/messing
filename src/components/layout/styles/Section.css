@@ -1,0 +1,12 @@
+section {
+  color: #222222; }
+  section h1 {
+    font-family: 'Messing Bold', serif;
+    font-size: 100px; }
+  section.centered {
+    display: flex;
+    align-items: center;
+    min-height: 100vh; }
+  section.inverted {
+    color: #fdfffc;
+    background-color: #222222; }

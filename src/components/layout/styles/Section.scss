@@ -1,0 +1,21 @@
+@import 'variables';
+
+section {
+  color: $black;
+
+  h1 {
+    font-family: 'Messing Bold', serif;
+    font-size: 100px;
+  }
+
+  &.centered {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &.inverted {
+    color: $white;
+    background-color: $black;
+  }
+}
