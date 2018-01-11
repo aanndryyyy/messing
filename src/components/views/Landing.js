@@ -4,8 +4,8 @@ import Section from '../layout/Section';
 import Container from '../layout/Container';
 
 export default class Landing extends Component {
-	render() {
-		return (
+  render() {
+    return (
       <main>
         <Section>
           <Container>
@@ -13,7 +13,7 @@ export default class Landing extends Component {
           </Container>
         </Section>
 
-        <Section class="inverted">
+        <Section addClass="inverted">
           <Container>
             <h1>Colt Series</h1>
           </Container>
@@ -31,6 +31,6 @@ export default class Landing extends Component {
           </Container>
         </Section>
       </main>
-		);
-	}
+    );
+  }
 }

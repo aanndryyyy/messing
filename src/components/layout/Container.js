@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 
 import './styles/Container.css';
 
-const Container = (props) => {
+const Container = ({addClass, children}) => {
   return (
-    <div className={`container ${props.class}`}>
-      {props.children}
+    <div className={`container ${addClass}`}>
+      {children}
     </div>
   );
 }
 
 Container.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  addClass: PropTypes.string
 };
 
 export default Container;

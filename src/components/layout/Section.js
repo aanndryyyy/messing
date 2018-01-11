@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 import './styles/Section.css';
 
-const Section = (props) => {
+const Section = ({addClass, children}) => {
   return (
-    <section className={`centered ${props.class}`}>
-      {props.children}
+    <section className={`centered ${addClass}`}>
+      {children}
     </section>
   );
 }
 
 Section.propTypes = {
   children: PropTypes.node,
-  class: PropTypes.string
+  addClass: PropTypes.string
 };
 
 export default Section;
