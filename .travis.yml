@@ -8,7 +8,7 @@ script:
 - npm run build
 - npm test
 after_success:
-  'find ./build -name "*" -type f -exec curl -u $FTP_USER:$FTP_PASSWORD -T {} ftp://pedak.me/proc/messing/ \;'
+  'find ./build -name "*" -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://pedak.me/proc/messing/ \;'
 env:
   global:
   - secure: XJ4+KZWo4nPBiO5GivG0hhspEggGVv0R3FQizT1Y45Ea+RtLRmuQ77oILrjCxgsZFARyMb15YxOuSWUGUawXbXYQw1J/hBii7UaYnso/OHzKW8jvN3Gd0vHKftLt2+wjx+yOl1M9oTc89KvIEp//uN5TAo/f1pTeMHA+I6z26KAcMBu2Ie4BIp4m0oVT4c67+FzQnOZgmIDx4PbGqcsuAQnDSBwjDjXuONhW318eNOwWV9RPoNGt36EZSQ1TvVBhtm8xFhPx/FF9dA7CaEBchwwz8Juo/KUupz54Y91ZbASOQnwY9FRTVV1XnQDC3M8aAIHmphevvV1OoEBtXaswM+2wYfNu+sgK4xOUYAMTZ61K17rNlrA/pHX5aSpuX3KCIZS7+BQGjtf2WjJ/zE0Zu7DiO2SXmB3IRg1Pz6GTnEWWCQf4FoUnoOfBPvpvz1jmriJ4r0zQCSAKUBp3y6xaT7sxnXBBodfx0YAHqquOmTBaLhfuEkLmXBoOT8xyuYLb8TzGBnigpvjvTXB4QAcQf/46suL3FeMA/txsJ6kGtEjEPnv9QnBNw4lAVcXFxj7Wq2pXlCgu6cIm6rTqpcgPQgXUh30gDglWRaJ9vOcQImSfZSWulyJO3+51iOkOaMui0p6S6sVpuxOYgtA+apGFaBwHu8zkN+lovJnTzR3B8Zc=
