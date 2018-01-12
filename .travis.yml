@@ -1,9 +1,15 @@
 language: node_js
 node_js:
-  - 6
+- 6
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run build
-  - npm test
+- npm run build
+- npm test
+after_success: 
+  "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://pedak.me/proc/messing/"
+env:
+  global:
+  - secure: p4fYrqxwX8EjvS1/SMAu6HEHBHv1ma0diRD/XGLegQICaELNLKei5ZSOQMsWmOuPgoMO6zm0iJCyRtKW81KDDHLqXXNr8xuqNBN624YFU8VnS5+EPlIKcHdGpK7UMO4rTKc0r+3RyvjXTgOT5C+snIGHKvKSuFwl5l1etjKeNmgEqIf98e7bxYiMK3Op9wUJWN9RReL1Oi7s718M3Z6dN1U7pqR9/pShJE6zAcyuKpNt0uJyziZyXMG+mO6hqu9+kPys6LMiPbSLd9nuWqnwG50YA7a58php4ULnKQu8ps7Fm4UEkvEiJr0dsDZpXgpUsNT6ruSOlgOyHUZx7RiFSQtzw0srbtEwfUkIB+O69LgGRfC2gNov98FfXkfr8Css/DpQxGz32Kj+EfrkdfMqdRaF0FuGAqcX32n0ByTAz6wk5/Li453jP0w2KGzpt2P52NGlumZP+FeXIobvvLhAQpmGEelaYjLprwuTBpRS1M061fa1PJV4FvwUvE/q0o1vhbxyS2z0xiy3UiHzopAPUKFOUY6EdT6t1V345PzNG0dZvEumDE0H9wp8/42tOV1FKc24EYc5+ePZaJb9CXRefowBEt3CVcKouT4ND0wuX60ea5jG2RclKfHSzvepf02vi+WHXmU0u+BYREmqn1KjQ+IpZiI7nlIUFY9LmwNKkyw=
+  - secure: 2R4P1ExFM+wlimdhZEDa62kQqZK+aD50qHz/3/0HrB03kFGUxyfc4O0OXRl6/VV6+E7pYGc0leholmgoKWmv2zLOzRZOmErE3rZO5oZteRCRVHXeMGnSH4aP8CIxDGAVfQm8p/eezCDj0h0636as2jDilHtiPy/RLRnrsdthO5muntx1jM9ATZt5FjM8cQY6+TOAnKfDZFX5sVEn2NoyOtlveuxni8ORRKJJQJKYXLD8uORGgF/IksiMtQmpTgx74vOjglfQ3wkyr6GBPScCalk5s3cdcnmcjNRiZWJez+rBFlXa3xxcMSDatKrTmcVa2ktD6qD0uR/LNqNsnGUxMuOLaxAiIEC/n06ZYsv0Pa7pSjCDr+DEQIqTFZ2YCgKqI5KYIf9JLLVGVJVY0mmWQkozuClh5hyvfD+XoYYIo8w8vnpeqgz17+19eENg2pqM0tqx1o5x/BvO3xyrSavtsv2lVDiWR1bikHBVQ5AGxSpZs1rOtof+NJ3dOKAfTfWbIrzoi0E935mFGECfiOfAxIR3lMnpyT1pP56FK0Npp6a5M5pLQeYLUbVn9Ad/fMQn41kY0XlMdBR5XSQRk9QgFtPFGqgW4/fuMm/evrUizLxnkGS14zZP8IY4B6Lof0z4uNq8ece54IkQu79b1r9NOQNiBuT0rOQGhR1xoEaKE64=
