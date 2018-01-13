@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Section from '../layout/Section';
 import Container from '../layout/Container';
+import SocialLinks from '../layout/SocialLinks';
 
 export default class Landing extends Component {
   render() {
@@ -13,6 +14,8 @@ export default class Landing extends Component {
 
             <p>Sügavam bass, puhtam heli.</p>
           </Container>
+
+          <SocialLinks />
         </Section>
 
         <Section addClass="inverted">
@@ -35,6 +38,8 @@ export default class Landing extends Component {
           <Container>
             <h1>Telli</h1>
           </Container>
+
+          <SocialLinks />
         </Section>
       </main>
     );
