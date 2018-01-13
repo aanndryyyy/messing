@@ -10,18 +10,24 @@ export default class Landing extends Component {
         <Section>
           <Container>
             <h1>Colt Premium Series</h1>
+
+            <p>Sügavam bass, puhtam heli.</p>
           </Container>
         </Section>
 
         <Section addClass="inverted">
           <Container>
             <h1>Colt Series</h1>
+
+            <p>Vabaajakuulajale.</p>
           </Container>
         </Section>
 
         <Section>
           <Container>
             <h1>Soviet Series</h1>
+
+            <p>Stuudio helikvaliteet.</p>
           </Container>
         </Section>
 
