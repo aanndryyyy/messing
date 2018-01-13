@@ -6,6 +6,20 @@ section {
   h1 {
     font-family: 'Messing Bold', serif;
     font-size: 100px;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 50px;
+    }
+  }
+
+  p {
+    margin-top: 50px;
+    font-family: 'Messing Italic', serif;
+    font-size: 30px;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 15px;
+    }
   }
 
   &.centered {
