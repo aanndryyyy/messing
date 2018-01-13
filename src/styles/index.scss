@@ -11,4 +11,10 @@ body {
   right: 0;
   bottom: 0;
   width: 150px;
+
+  @media only screen and (max-width: 1024px) {
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+  }
 }
