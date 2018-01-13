@@ -1,0 +1,16 @@
+.social-links {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-family: 'Messing', serif;
+  text-align: center; }
+  .social-links li {
+    display: inline-block;
+    padding: 0 15px; }
+    .social-links li a {
+      text-decoration: none;
+      font-size: 14px;
+      color: rgba(34, 34, 34, 0.7); }
+      .social-links li a:hover {
+        color: #222222; }
