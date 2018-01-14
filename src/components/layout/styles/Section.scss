@@ -21,6 +21,16 @@ section {
     @media only screen and (max-width: 1024px) {
       font-size: 15px;
     }
+
+    a {
+      color: $gold;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+        border-bottom: 3px solid $black;
+      }
+    }
   }
 
   &.centered {

@@ -20,14 +20,6 @@ export default class Landing extends Component {
 
         <Section addClass="inverted">
           <Container>
-            <h1>Colt Series</h1>
-
-            <p>Vabaajakuulajale.</p>
-          </Container>
-        </Section>
-
-        <Section>
-          <Container>
             <h1>Soviet Series</h1>
 
             <p>Stuudio helikvaliteet.</p>
@@ -36,7 +28,17 @@ export default class Landing extends Component {
 
         <Section>
           <Container>
-            <h1>Telli</h1>
+            <h1>Colt Series</h1>
+
+            <p>Vabaajakuulajale.</p>
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <h1>Telli omale paar</h1>
+
+            <p>Saadaval läbi meie <a href="https://www.facebook.com/ofmessing">Facebook</a>i ja <a href="https://www.instagram.com/messingof">Instagram</a>i lehe.</p>
           </Container>
 
           <SocialLinks />

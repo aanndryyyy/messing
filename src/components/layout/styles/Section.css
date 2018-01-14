@@ -14,6 +14,12 @@ section {
     @media only screen and (max-width: 1024px) {
       section p {
         font-size: 15px; } }
+    section p a {
+      color: #d1a14a;
+      text-decoration: none; }
+      section p a:hover {
+        color: #222222;
+        border-bottom: 3px solid #222222; }
   section.centered {
     display: flex;
     align-items: center;
