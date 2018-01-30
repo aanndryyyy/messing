@@ -4,6 +4,8 @@ import Section from '../layout/Section';
 import Container from '../layout/Container';
 import SocialLinks from '../layout/SocialLinks';
 
+import ProductBuilder from '../blocks/ProductBuilder';
+
 export default class Landing extends Component {
   render() {
     return (
@@ -12,7 +14,7 @@ export default class Landing extends Component {
           <Container>
             <h1>Colt Premium Series</h1>
 
-            <p>Sügavam bass, puhtam heli.</p>
+            <p>Deeper bass, crystal clear sound.</p>
           </Container>
 
           <SocialLinks />
@@ -22,7 +24,7 @@ export default class Landing extends Component {
           <Container>
             <h1>Soviet Series</h1>
 
-            <p>Stuudio helikvaliteet.</p>
+            <p>Studio sound quality.</p>
           </Container>
         </Section>
 
@@ -30,15 +32,15 @@ export default class Landing extends Component {
           <Container>
             <h1>Colt Series</h1>
 
-            <p>Vabaajakuulajale.</p>
+            <p>Designed for the casual listener.</p>
           </Container>
         </Section>
 
         <Section>
           <Container>
-            <h1>Telli omale paar</h1>
+            <h1>Build your own</h1>
 
-            <p>Saadaval läbi meie <a href="https://www.facebook.com/ofmessing">Facebook</a>i ja <a href="https://www.instagram.com/messingof">Instagram</a>i lehe.</p>
+            <ProductBuilder />
           </Container>
 
           <SocialLinks />
