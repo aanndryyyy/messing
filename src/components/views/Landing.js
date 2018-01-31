@@ -36,9 +36,11 @@ export default class Landing extends Component {
           </Container>
         </Section>
 
-        <Section>
+        <Section addClass="auto-height">
           <Container>
-            <h1>Build your own</h1>
+            <h1>Reserve your pair.</h1>
+
+            <p>Customize to your liking.</p>
 
             <ProductBuilder />
           </Container>
