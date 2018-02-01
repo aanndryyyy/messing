@@ -88,7 +88,7 @@ export default class ProductBuilder extends Component {
 
           {colorSelect}
 
-          <input type="submit" value="Send Reservation" />
+          <button type="submit">Send Reservation</button>
         </form>
 
         <p className="success">Your reservation has been sent.<br />We will get back to you with the details shortly!</p>
