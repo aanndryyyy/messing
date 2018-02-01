@@ -1,6 +1,6 @@
 .form-wrap {
   display: block;
-  margin: 100px 0; }
+  margin: 50px 0 100px; }
   .form-wrap .success {
     display: none;
     line-height: 1.5; }
@@ -16,6 +16,13 @@ form {
   @media (min-width: 1024px) {
     form {
       width: 350px; } }
+  form p {
+    font-size: 12px;
+    line-height: 1.5; }
+  form .dash {
+    width: 50px;
+    margin-top: 15px;
+    border-bottom: 1px solid #222222; }
   form label, form input, form select {
     display: block; }
   form label {

@@ -2,7 +2,7 @@
 
 .form-wrap {
   display: block;
-  margin: 100px 0;
+  margin: 50px 0 100px;
 
   .success {
     display: none;
@@ -27,6 +27,17 @@ form {
 
   @media (min-width: 1024px) {
     width: 350px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .dash {
+    width: 50px;
+    margin-top: 15px;
+    border-bottom: 1px solid $black;
   }
 
   label, input, select {
