@@ -77,9 +77,9 @@ export default class ProductBuilder extends Component {
 
           <label htmlFor="series">Choose your Series</label>
           <select id="series" name="series" value={this.state.series} onChange={this.handleSeriesChange} required>
-            <option value="premium">Colt Premium Series</option>
-            <option value="colt">Colt Series</option>
-            <option disabled value="soviet">Soviet Series</option>
+            <option value="premium">Colt Premium Series – 15€</option>
+            <option value="colt">Colt Series – 10€</option>
+            <option disabled value="soviet">Soviet Series – XX€</option>
           </select>
 
           {colorSelect}
