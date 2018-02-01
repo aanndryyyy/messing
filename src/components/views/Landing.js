@@ -38,7 +38,7 @@ export default class Landing extends Component {
 
         <Section addClass="auto-height">
           <Container>
-            <h1>Reserve your pair.</h1>
+            <h1>Book your pair.</h1>
 
             <p>Customize to your liking.</p>
 

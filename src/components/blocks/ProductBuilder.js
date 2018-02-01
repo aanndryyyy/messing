@@ -69,6 +69,10 @@ export default class ProductBuilder extends Component {
       <div className={`form-wrap ${this.state.status ? 'sent' : ''}`}>
 
         <form onSubmit={this.handleSubmit} className={this.state.displayErrors ? 'displayErrors' : ''} noValidate>
+          <p>Submit this form to book your pair. We will email you the payment and delivery details.</p>
+
+          <div className="dash"></div>
+
           <label htmlFor="name">Full name</label>
           <input id="name" name="name" type="text" required />
 
